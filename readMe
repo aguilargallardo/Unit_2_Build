@@ -1,1 +1,23 @@
+REPORT
+
+
+What does The Beatles, Queen, Drake, Post Malone and Halsey have in common? Well, in their own respective genres, they have some amazing hits! Every genre has their own hot hits that continue to be very popular today! But why is that…?  What is it about their songs that are so appealing to people? Maybe figuring out the reasoning as to why some of these songs can be approached through the means of quantitative research.
+
+The Data!
+The data I used for my research was found on Kaggle.com, a platform that contains many datasets for people to use to do data science research and machine learning engineering. The dataset was created by Zaheen Hamidani. Hamidani used a spotify API to acquire 232,725 songs all broken down to 26 different genres. Approximately almost nine thousand songs per genre. What is interesting about what Spotify did is that the songs contained different features on the dataset that seem to contain quantitative values. Important feature ranging from liveness of a song to the tempo. It also contains the popularity of a song that ranges from 0-100. 
+
+Machine Learning
+Since I have a clean dataset with interesting features I can use machine learning tools to find some usefulness with the dataset! Now what exactly do I want to predict? Popularity of course! Using a RandomForestRegressor I can predict whether or not a song is going to be popular!  At least that is the plan.
+
+Baseline
+Lets start off will doing a baseline! I did a linear regression to start off with to see what my baseline score would be.
+
+
+Random Forest Regressor 
+This is my code for my random forest regressor with my hyper parameters! This is what I got.  Pipeline with the random forest regression to the left and my hyper parameters to the right.
+I manage to get a much better score. The mean absolute error score was 5.154275965900944, which is a lot lower than 6.4 of our baseline. It doesn’t seem like much before it definitely show less error then just creating a model on a linear regression model.
+
+
+The Next Step
+My predictive  model proves to be quite intriguing. I’m going to continue to do further research and looking into building an interactive dashboard to be deployed as an app for users to predict what makes a song popular in a genre. This can be a potentially useful tool for artists  that are looking into seeing what kind of song they might think of making that have a high chance of being popular. 
 
